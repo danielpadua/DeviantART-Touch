@@ -131,6 +131,9 @@
                 }
 }
 
+.prg { width: calc(40% - 20px); }
+.hide { display: none; }
+
 @media screen and (-ms-view-state: fullscreen-portrait) {
     .itemspage .itemslist .win-horizontal.win-viewport .win-surface {
         margin-left: 95px;

@@ -14,6 +14,7 @@
             listView.oniteminvoked = this._itemInvoked.bind(this);
 
             this._initializeLayout(listView, Windows.UI.ViewManagement.ApplicationView.value);
+            WinJS.Utilities.addClass(document.getElementById("artProgress"), "hide");
             listView.element.focus();
         },
 
