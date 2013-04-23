@@ -41,5 +41,10 @@
         app.sessionState.history = nav.history;
     };
 
+    WinJS.Application.onsettings = function (e) {
+        e.detail.applicationcommands = { "privacyPolicy": { title: "Privacy Policy", href: "/pages/settings/privacy.html" } };
+        WinJS.UI.SettingsFlyout.populateSettings(e);
+    };
+
     app.start();
 })();

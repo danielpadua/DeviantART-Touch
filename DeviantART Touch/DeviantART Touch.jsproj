@@ -47,15 +47,16 @@
     <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
     <TargetPlatformVersion>8.0</TargetPlatformVersion>
     <DefaultLanguage>en-US</DefaultLanguage>
-    
-    <PackageCertificateKeyFile>DeviantART Touch_TemporaryKey.pfx</PackageCertificateKeyFile>
-    
+    <PackageCertificateKeyFile>DeviantART Touch_StoreKey.pfx</PackageCertificateKeyFile>
+    <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
+    <PackageCertificateThumbprint>35CF5F90C85CCEA21539127FD1EA504848AD9563</PackageCertificateThumbprint>
   </PropertyGroup>
   <ItemGroup>
     <AppxManifest Include="package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
     <Content Include="css\default.css" />
+    <None Include="DeviantART Touch_StoreKey.pfx" />
     <Content Include="images\logo.png" />
     <Content Include="images\smalllogo.png" />
     <Content Include="images\splashscreen.png" />
@@ -63,16 +64,16 @@
     <Content Include="js\data.js" />
     <Content Include="js\default.js" />
     <Content Include="js\navigator.js" />
+    <None Include="Package.StoreAssociation.xml" />
     <Content Include="pages\items\items.css" />
     <Content Include="pages\items\items.html" />
     <Content Include="pages\items\items.js" />
+    <Content Include="pages\settings\privacy.html" />
     <Content Include="pages\split\split.css" />
     <Content Include="pages\split\split.html" />
     <Content Include="pages\split\split.js" />
     <Content Include="default.html" />
-    
     <None Include="DeviantART Touch_TemporaryKey.pfx" />
-    
   </ItemGroup>
   <ItemGroup>
     <SDKReference Include="Microsoft.WinJS.1.0, Version=1.0" />
